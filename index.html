@@ -17,9 +17,9 @@
 /* ===== فونت رخ (Rokh) — فونت اصلی تمام متن‌های فارسی =====
    لینک‌های فایل فونت را از jsDelivr یا raw گیت‌هاب بگذار و مسیر/وزن‌ها را هماهنگ کن.
    هر وزن یک @font-face جداگانه با font-display: swap. وزیرمتن فقط fallback است. */
-@font-face{font-family:'Rokh';src:url('https://cdn.jsdelivr.net/gh/USER/REPO@main/fonts/Rokh-Light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:'Rokh';src:url('https://cdn.jsdelivr.net/gh/USER/REPO@main/fonts/Rokh-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'Rokh';src:url('https://cdn.jsdelivr.net/gh/USER/REPO@main/fonts/Rokh-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Rokh';src:url('https://raw.githubusercontent.com/mhdyhn/mhdy/main/Rokh%20family/Rokh-Light%20%5B%40ClubEdits%5D.ttf') format('truetype');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'Rokh';src:url('https://raw.githubusercontent.com/mhdyhn/mhdy/main/Rokh%20family/Rokh-Regular%20%5B%40ClubEdits%5D.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Rokh';src:url('https://raw.githubusercontent.com/mhdyhn/mhdy/main/Rokh%20family/Rokh-Bold%20%5B%40ClubEdits%5D.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
 
 /* ===== پالت و متغیرها ===== */
 :root{--g0:#051A17;--g1:#0A2E2A;--g2:#0F4C45;--g3:#3C8B7C;--iv:#E8ECE4;--mut:#8DA8A0;--ch:#C9BC92;--line:rgba(232,236,228,.16);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -223,17 +223,16 @@ h1 span:nth-child(1){text-align:start}
 
 <script>
 /* ==================== قابل ویرایش ====================
-   ۱. فونت رخ: در بخش <style> بالای فایل، لینک‌های real فایل woff2 را
-      جایگزین https://cdn.jsdelivr.net/gh/USER/REPO@main/fonts/Rokh-*.woff2 کن.
-   ۲. LOGO: مسیر یا لینک فایل لوگو (مثلاً assets/logo.svg). ارتفاعیBounds به ۳۴px تنظیم شده است.
+   ۱. فونت رخ (Rokh): لینک‌های raw گیت‌هاب در بخش <style> تنظیم شده‌اند.
+   ۲. LOGO: مسیر فایل لوگو (فعلاً assets/logo.png — لوگو RAFIM/گرافیم).
       اگر لوگو تیره است، نسخه روشن/تک‌رنگ آن را بگذار تا روی پس‌زمینه سبز خوانا باشد.
-   ۳. TG: آیدی تلگرام را بدون @ بگذار.
-   ۴. projects: آرایه ۶ پروژه را پر کن؛ matn‌های داخل [ ] همان‌طور باقی بمانند تا تصاویر واقعی را بگیرد.
+   ۳. TG: آیدی تلگرام بدون @ (فعلاً Mhdy_Hn12).
+   ۴. projects: آرایه ۶ پروژه را پر کن؛ matn‌های داخل [ ] همان‌طور باقی بمانند.
    ۵. تصاویر موکاپ: هر پروژه صفت img:'' دارد؛ لینک تصویر واقعی را اینجا قرار ده.
    ================================================== */
 
 const TG='Mhdy_Hn12'; /* آیدی تلگرام بدون @ */
-const LOGO=''; /* مسیر فایل لوگو، مثلاً assets/logo.svg */
+const LOGO='assets/logo.png'; /* مسیر فایل لوگو، ارتفاع ۳۴px */
 const projects=[
  {t:'[عنوان پروژه اول]',ty:'اپ موبایل',y:'۱۴۰۴',dev:'m',role:'[نقش تو]',sum:'[یک یا دو جمله درباره پروژه]',problem:'[مسئله‌ای که حل شد]',process:'[مراحل تحقیق و طراحی]',dec:'[مهم‌ترین تصمیم‌های طراحی]',res:'[نتیجه نهایی]',img:''},
  {t:'[عنوان پروژه دوم]',ty:'وب‌اپ',y:'۱۴۰۴',dev:'d'},
